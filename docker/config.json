@@ -1,0 +1,4 @@
+{
+  "db": "mongodb://fwd_mongodb_1:27017/fwd",
+  "port": 80
+}

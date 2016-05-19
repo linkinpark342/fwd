@@ -1,0 +1,14 @@
+version: '2'
+services:
+  fwd:
+    build: .
+    links:
+    - mongodb
+    ports:
+    - "8080:80"
+  mongodb:
+    image: mongo:3.3
+    volumes:
+      - mongodata:/data/db
+volumes:
+  mongodata: {}
